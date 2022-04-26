@@ -1,0 +1,45 @@
+#flex-parent{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space evenly;
+  border: 2px solid gold;
+}
+
+#top{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  border: 2px solid gold;
+  width:100%;
+  text-align: center;
+}
+
+
+$nav-header ul{
+}
+
+#nav-header li{
+  list-style: none;
+  display: inline;
+  font-size: 1em;
+  padding:8px;
+}
+
+#nav-header{
+  width:50%;
+  border: 2px solid red
+}
+
+
+
+#left{
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid gold;
+}
+
+#right{
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid gold;
+}
