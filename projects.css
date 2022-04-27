@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   border: 2px solid gold;
   height:900px;
-  align-content:space-between;
+  align-content:flex-start;
   overflow: scroll;
 }
 
@@ -28,39 +28,19 @@
   border: 2px solid red
 }
 
-#title{
-  width:100%;
-  text-align: center;
-  text-decoration: underline;
-}
-#left{
-  display: flex;
-  width:5%;
-  margin-left: 5%;
-  border: 2px solid gold;
-  height:500px
-}
-
-#right{
+#middle{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items:center;
-  width:70%;
-  margin-left: 10%;
-  padding:10px;
-  border: 2px solid gold;
-}
-
-.about{
-  width:40%;
-  border: 1px solid red;
-  text-align: center;
-  height:200px;
-}
-
-#bottom{
-  display:flex;
+  align-content: space-around;
   width: 100%;
   border: 2px solid gold;
+  padding:5px;
+  height:90%;
+}
+
+.project{
+  width:100%;
+  text-align: center;
+  border: 2px solid red;
+  height:80px;
 }

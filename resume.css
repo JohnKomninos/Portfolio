@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   border: 2px solid gold;
   height:900px;
-  align-content:space-between;
+  align-content:flex-start;
   overflow: scroll;
 }
 
@@ -28,39 +28,18 @@
   border: 2px solid red
 }
 
-#title{
+#resume{
   width:100%;
   text-align: center;
   text-decoration: underline;
+  margin-top: 5%;
+  border: 2px solid red
 }
-#left{
+#middle{
   display: flex;
-  width:5%;
-  margin-left: 5%;
+  width:50%;
   border: 2px solid gold;
-  height:500px
-}
-
-#right{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items:center;
-  width:70%;
-  margin-left: 10%;
-  padding:10px;
-  border: 2px solid gold;
-}
-
-.about{
-  width:40%;
-  border: 1px solid red;
-  text-align: center;
-  height:200px;
-}
-
-#bottom{
-  display:flex;
-  width: 100%;
-  border: 2px solid gold;
+  margin: 0 auto;
+  margin-top: 10%;
+  height:50%
 }
