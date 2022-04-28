@@ -1,4 +1,5 @@
-const text = "My name is John Komninos. For 8 years I specialized in logistics but recently I have realized that, although I am good at logistics, my interest is no longer there. Having taken some computer classes in college, I have decided to revisit and pursue a career in tech. I believe the skills I have acquired through managing logistics for 8 years coupled with my passion for tech will make me an excellent software developer."
+const name = "John Komninos"
+const text = "For 8 years I specialized in logistics but recently I have realized that, although I am good at logistics, my interest is no longer there. Having taken some computer classes in college, I have decided to revisit and pursue a career in tech. I believe the skills I have acquired through managing logistics for 8 years coupled with my passion for tech will make me an excellent software developer."
 
 $(()=>{
   const $hobby = $('.about').children().eq(0)
@@ -30,7 +31,9 @@ $(()=>{
   $('#right').children().eq(2).append($list3)
   $list3.hide()
 
-  const $newDiv = $('<div>').attr('id', 'overview').text(text).appendTo('#right')
+  const $newDiv = $('<div>').attr('id', 'overview').appendTo('#right')
+  const $name = $('<h1>').text(name).appendTo($newDiv)
+  const $text = $('<h3>').text(text).appendTo($newDiv)
   $newDiv.hide()
 
   $hobby.on("click" , ()=>{

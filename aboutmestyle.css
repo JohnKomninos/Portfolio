@@ -39,7 +39,7 @@ body{
 }
 
 .nav:hover{
-  font-size: 1.5em;
+  background-color: rgba(0, 255, 0, .8);
 }
 
 #title{
@@ -86,9 +86,8 @@ body{
 #overview{
   width:60%;
   text-align:justify;
-  height:350px;
-  padding-top: 20%;
-  padding-left: 2px;
+  height:320px;
+  padding: 10px;
   background-color: #D3D3D3;
   border-radius: 7px;
 }
@@ -134,6 +133,10 @@ border-radius: 50%;
 
 .about{
   height:200px;
+}
+#overview{
+  width:85%;
+  height:350px;
 }
 }
 
