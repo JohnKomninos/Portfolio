@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar&family=Roboto:wght@300&display=swap');
 body{
-  background:
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
 }
 #flex-parent{
   display: flex;
