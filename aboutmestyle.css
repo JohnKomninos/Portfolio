@@ -79,6 +79,20 @@ body{
   padding-top: 70px
 }
 
+#hobbies{
+  padding-top: 40px;
+}
+
+#overview{
+  width:60%;
+  text-align:justify;
+  height:350px;
+  padding-top: 20%;
+  padding-left: 2px;
+  background-color: #D3D3D3;
+  border-radius: 7px;
+}
+
 #bottom{
   display:flex;
   flex-wrap: wrap;
