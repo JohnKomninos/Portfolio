@@ -6,19 +6,18 @@ body{
 #flex-parent{
   display: flex;
   flex-wrap: wrap;
-  border: 2px solid gold;
   height:900px;
   align-content:space-between;
   overflow: scroll;
+  /* justify-content: space-evenly; */
 }
 
 #top{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row-reverse;
-  border: 2px solid gold;
   width:100%;
-  text-align: center;
+  text-align:center;
 }
 
 #nav-header li{
@@ -30,7 +29,17 @@ body{
 
 #nav-header{
   width:50%;
-  border: 2px solid red
+  background-color: #D3D3D3;
+  border-radius: 7px;
+}
+
+.nav{
+  text-decoration: none;
+  color: black;
+}
+
+.nav:hover{
+  font-size: 1.5em;
 }
 
 #title{
@@ -38,12 +47,14 @@ body{
   text-align: center;
   text-decoration: underline;
 }
+
 #left{
   display: flex;
-  width:23%;
+  flex-wrap: wrap;
+  width:20%;
   margin-left: 5%;
-  border: 2px solid gold;
-  height:500px
+  height:500px;
+
 }
 
 #right{
@@ -51,23 +62,38 @@ body{
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items:center;
-  width:50%;
+  width:60%;
   margin-left: 10%;
   padding:10px;
-  border: 2px solid gold;
 }
 
 .about{
   width:40%;
-  border: 1px solid red;
   text-align: center;
   height:200px;
+  background-color: #D3D3D3;
+  border-radius: 7px;
+}
+
+.about h3{
+  padding-top: 70px
 }
 
 #bottom{
   display:flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   width: 100%;
-  border: 2px solid gold;
+
+}
+
+.links{
+width:20%;
+text-align: center;
+background-color: #D3D3D3;
+border-radius: 50%;
+background-color: #D3D3D3;
+border-radius: 50%;
 }
 
 @media (max-width:400px){
@@ -76,7 +102,6 @@ body{
   height:667px;
 }
 
-
 #nav-header li{
   display:block;
   height:133px;
@@ -84,14 +109,38 @@ body{
   font-size: 2em
 }
 
-
+#left{
+  height:400px;
+}
+#right{
+  margin-left: 0%;
+  width: 100%;
+  height:500px
 }
 
-@media (max-width:956px){
+.about{
+  height:200px;
+}
+}
+
+@media (max-width:668px){
 #left{
   width:100%;
+  margin-left: 0%;
+  height:400px;
 }
+
 #photo{
   margin:0 auto;
+}
+
+#right{
+  margin-left: 0%;
+  width: 100%;
+  height:500px
+}
+
+.about{
+  height:200px;
 }
 }
