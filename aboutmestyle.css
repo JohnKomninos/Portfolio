@@ -107,8 +107,20 @@ body{
 .links{
 width:55px;
 text-align: center;
-background-color: #D3D3D3;
 border-radius: 50%;
+}
+
+ion-icon{
+  height:50px;
+  width:50px;
+}
+
+.blue-logo{
+  color:blue;
+}
+
+#black-logo{
+  color:black;
 }
 
 #modal-background{
