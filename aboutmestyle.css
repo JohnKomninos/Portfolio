@@ -2,6 +2,8 @@
 body{
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
 }
 #flex-parent{
   display: flex;
@@ -9,7 +11,6 @@ body{
   height:900px;
   align-content:space-between;
   overflow: scroll;
-  /* justify-content: space-evenly; */
 }
 
 #top{
@@ -17,7 +18,6 @@ body{
   flex-wrap: wrap;
   flex-direction: row-reverse;
   width:100%;
-  text-align:center;
 }
 
 #nav-header li{
@@ -31,6 +31,7 @@ body{
   width:50%;
   background-color: #D3D3D3;
   border-radius: 7px;
+  box-shadow: -10px 10px 5px -1px grey;
 }
 
 .nav{
@@ -41,6 +42,7 @@ body{
 .nav:hover{
   background-color: rgba(0, 255, 0, .8);
 }
+
 
 #title{
   width:100%;
@@ -73,6 +75,7 @@ body{
   height:200px;
   background-color: #D3D3D3;
   border-radius: 7px;
+  box-shadow: -10px 10px 5px -1px grey;
 }
 
 .about h3{
@@ -90,6 +93,7 @@ body{
   padding: 10px;
   background-color: #D3D3D3;
   border-radius: 7px;
+  box-shadow: -10px 10px 5px -1px grey;
 }
 
 #bottom{
@@ -109,7 +113,7 @@ background-color: #D3D3D3;
 border-radius: 50%;
 }
 
-@media (max-width:400px){
+@media (max-width:594px){
 #nav-header{
   width:100%;
   height:667px;
@@ -140,7 +144,7 @@ border-radius: 50%;
 }
 }
 
-@media (max-width:668px){
+@media (max-width:893px){
 #left{
   width:100%;
   margin-left: 0%;

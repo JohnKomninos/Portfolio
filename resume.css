@@ -2,6 +2,8 @@
 body{
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
 }
 #flex-parent{
   display: flex;
@@ -16,7 +18,6 @@ body{
   flex-wrap: wrap;
   flex-direction: row-reverse;
   width:100%;
-  text-align:center;
 }
 
 #nav-header li{
@@ -24,12 +25,14 @@ body{
   display: inline;
   font-size: 1em;
   padding:8px;
+
 }
 
 #nav-header{
   width:50%;
   background-color: #D3D3D3;
   border-radius: 7px;
+  box-shadow: -10px 10px 5px -1px grey;
 }
 
 .nav{
@@ -40,6 +43,7 @@ body{
 .nav:hover{
   background-color: rgba(0, 255, 0, .8);
 }
+
 
 #resume{
   width:100%;
@@ -52,7 +56,8 @@ body{
   background-color: #D3D3D3;
   border-radius: 7px;
   margin: 0 auto;
-  height:50%
+  height:50%;
+  box-shadow: -10px 10px 5px -1px grey;
 }
 
 #bottom{
