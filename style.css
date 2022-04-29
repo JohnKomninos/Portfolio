@@ -92,7 +92,7 @@ border-radius: 50%;
   width:100%;
   height:200px;
 }
-@media (max-width:400px){
+@media (max-width:464px){
 #nav-header{
   width:100%;
   height:667px;

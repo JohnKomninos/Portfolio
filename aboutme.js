@@ -75,4 +75,14 @@ $(()=>{
     $newDiv.hide()
     $('.about').show()
   })
+
+  const $modal = $('#modal-background')
+  const openModal = () =>{
+    $modal.css('display' , 'block')
+  }
+  setTimeout(openModal, 1500)
+
+  $('#close').on('click' , ()=>{
+    $modal.css('display' , 'none')
   })
+})

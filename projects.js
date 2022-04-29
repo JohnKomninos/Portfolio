@@ -9,4 +9,14 @@ for(let i = 0;i<5;i++){
     $('.project').eq(i).slideDown(1000)
   }
 )}
+
+const $modal = $('#modal-background')
+const openModal = () =>{
+  $modal.css('display' , 'block')
+}
+setTimeout(openModal, 1500)
+
+$('#close').on('click' , ()=>{
+  $modal.css('display' , 'none')
+})
 })
