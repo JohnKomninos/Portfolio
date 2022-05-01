@@ -99,11 +99,35 @@ ion-icon{
 
 #bottom{
   display: flex;
-  background-color: #D3D3D3;
-  border-radius: 7px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
   width:100%;
   height:200px;
 }
+
+.images img{
+  display: none;
+}
+
+.images img:first-of-type{
+  display:block;
+}
+
+.carousel-button{
+  align-self: center;
+  height: 50px;
+  width: 50px;
+  border:1px solid black;
+  border-radius: 50%;
+}
+
+.carousel-button{
+  text-align: center;
+  padding-bottom: 5px;
+  background-color: red;
+}
+
 @media (max-width:464px){
 #nav-header{
   width:100%;
