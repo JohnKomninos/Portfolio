@@ -18,4 +18,4 @@ challenges faced:
 2. structuring the overview so text would not overflow out of the div in the mobile view.
 3. Overflow:scroll was working weird on mobile so I resized all parent flex boxes to fit the content on one page. This caused some issues with the gredient backgrounds.
 4. Working with photos.
-5. trying to adjust the opacity on a div without affecting the opacity of the text containted within the div.
+5. trying to adjust the opacity on a div without affecting the opacity of the text contained within the div.

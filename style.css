@@ -25,6 +25,12 @@ body{
   width:100%;
 }
 
+#nav-header ul{
+  padding:0;
+  margin:0;
+  text-align: right;
+}
+
 #nav-header li{
   list-style: none;
   display: inline;
@@ -33,7 +39,23 @@ body{
 }
 
 #nav-header{
-  width:50%;
+  width:90%;
+}
+
+.hamburger{
+  display:none;
+}
+
+.close-hamburger{
+  font-size: 30px;
+}
+
+.bar{
+  display:block;
+  width:25px;
+  height:3px;
+  margin:5px auto;
+  background-color: white;
 }
 
 .nav{
@@ -45,6 +67,7 @@ body{
   background-color: rgba(0, 255, 0, .8);
   border-radius: 10px;
 }
+
 /* ///////styling the greeting and links///// */
 #left{
   display: flex;
@@ -129,12 +152,13 @@ ion-icon{
 @media (max-width:464px){
 
   #top{
-    justify-content: center;
+    justify-content:flex-start;
   }
 
   #nav-header{
-    width:80%;
+    width:100%;
     height:300px;
+    display: none;
   }
 
   #nav-header li{
@@ -142,6 +166,10 @@ ion-icon{
     height:50px;
     text-align: center;
     font-size: 1.5em
+  }
+
+  .hamburger{
+    display:block;
   }
 
   #left{
@@ -159,6 +187,6 @@ ion-icon{
   }
 
   #flex-parent{
-  height:1400px
+  height:1100px
   }
 }
