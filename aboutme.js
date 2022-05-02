@@ -24,10 +24,10 @@ $(()=>{
   $list2.hide()
 
   const $list3 = $('<ul>').attr('id' , 'hobbies')
-  const $Trait1 = $('<li>').text('Kind').appendTo($list3)
-  const $Trait2 = $('<li>').text('Funny').appendTo($list3)
-  const $Trait3 = $('<li>').text('Caring').appendTo($list3)
-  const $Trait4 = $('<li>').text('Grit').appendTo($list3)
+  const $Trait1 = $('<li>').text('JavaScript').appendTo($list3)
+  const $Trait2 = $('<li>').text('CSS').appendTo($list3)
+  const $Trait3 = $('<li>').text('HTML').appendTo($list3)
+  const $Trait4 = $('<li>').text('JQuery').appendTo($list3)
   $('#right').children().eq(2).append($list3)
   $list3.hide()
 

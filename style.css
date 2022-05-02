@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Akshar&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
 
 body{
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  background-color: #ffffff;
-  background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+  font-family: 'Rubik', sans-serif;
+  color: white;
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #7f8c8d 74%);
+  /* background-color: #5b6467;
+  background-image: linear-gradient(315deg, #5b6467 0%, #8b939a 74%); */
 }
 
 #flex-parent{
@@ -32,14 +34,11 @@ body{
 
 #nav-header{
   width:50%;
-  background-color: #D3D3D3;
-  border-radius: 7px;
-  box-shadow: -10px 10px 5px -1px grey;
 }
 
 .nav{
   text-decoration: none;
-  color: black;
+  color:white;
 }
 
 .nav:hover{
@@ -60,9 +59,6 @@ body{
 #greeting{
   width:100%;
   font-size: 1em;
-  background-color: #D3D3D3;
-  border-radius: 7px;
-  box-shadow: -10px 10px 5px -1px grey;
 }
 
 #links{
@@ -92,6 +88,12 @@ ion-icon{
   display: flex;
   flex-wrap: wrap;
   align-content: flex-end;
+  width: 150px;
+  height: 300px;
+  border-radius: 50%;
+  background-image: url('https://imgur.com/UcE0fiP.jpg');
+  background-size: cover;
+
 }
 
 #bottom{
@@ -119,7 +121,7 @@ ion-icon{
   border-radius: 50%;
   text-align: center;
   padding-bottom: 5px;
-  background-color: red;
+  background-color: black;
 }
 
 @media (max-width:464px){
@@ -130,7 +132,7 @@ ion-icon{
 
   #nav-header{
     width:80%;
-    height:350px;
+    height:300px;
   }
 
   #nav-header li{

@@ -41,7 +41,8 @@ const enemyAttack = (enemies) =>{
       }
       if(playerChoice.health<=0){
           $('<h3>').text('you perished at the hands of the enemy').appendTo($gameText)
-          process.exit()
+          $gameChoice.empty()
+          $('<button>').text('Refresh to play again').appendTo($gameChoice)
       }
   }
 }
