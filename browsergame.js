@@ -1,11 +1,12 @@
+// /setting classes/////
 const classes =[
 {name:'Swordsman', mHealth:14, health:14, attack:10, defense:5, speed:6, acc:.5},
 {name:'Archer', mHealth:12, health:12, attack:6, defense:3, speed:10, acc:.8},
-{name:'Paladin', mHealth:17, health:17, attack:4, defense:8, speed:4, acc:.7},
+{name:'Paladin', mHealth:17, health:17, attack:4, defense:6, speed:4, acc:.7},
 {name:'Lancer', mHealth:13, health:13, attack:7, defense:4, speed:8, acc:.6}]
 
 const enemies =[
-{name:'Enemy1', health:100, attack:10, defense:2, speed:5, acc:.7},
+{name:'Enemy1', health:15, attack:8, defense:2, speed:5, acc:.7},
 {name:'Enemy2', health:10, attack:5, defense:2, speed:5, acc:.7},
 {name:'Enemy3', health:10, attack:5, defense:2, speed:5, acc:.7},
 {name:'Enemy4', health:10, attack:5, defense:2, speed:5, acc:.7},
@@ -17,6 +18,7 @@ let potion = 2
 // let $gameText = $('.game-text')
 // let $gameChoice = $('.game-choice')
 
+////defining player attack////
 const ourAttack = (enemies) =>{
     if(playerChoice.acc>Math.random()){
         enemies.health -= (playerChoice.attack - enemies.defense)
@@ -31,6 +33,7 @@ const ourAttack = (enemies) =>{
 
     }
 }
+/////defining enemy attack/////
 const enemyAttack = (enemies) =>{
   if(enemies.health>0){
       if(enemies.acc>Math.random()){
@@ -48,15 +51,17 @@ const enemyAttack = (enemies) =>{
 }
 
 
-
+//////creating the first battle////
 const instance1 = () => {
     $gameText.empty()
     $gameChoice.empty()
+    ////creating the battle buttons////
     $gameText.text('The first enemy approaches! get ready')
     $('<button>').addClass('game-buttons').text('Attack').appendTo($gameChoice)
     $('<button>').addClass('game-buttons').text('Potion').appendTo($gameChoice)
     $('<button>').addClass('game-buttons').text('stats').appendTo($gameChoice)
     $('<button>').addClass('game-buttons').text('retreat').appendTo($gameChoice)
+    ////setting the click handlers for each battle button///
     $('.game-buttons').eq(0).on('click' , ()=>{
         $gameText.empty()
         if(playerChoice.speed>enemies[0].speed){
@@ -110,6 +115,7 @@ const instance1 = () => {
 }
 
 $(()=>{
+  ////creating the part of the game where the player picks their hero////
   $gameText = $('.game-text')
   $gameChoice = $('.game-choice')
   $('<h3>').text('Which class would you like to choose?').appendTo($gameText)

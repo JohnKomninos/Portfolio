@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="aboutmestyle.css">
   </head>
   <body>
+<!-- //////creating parent flex box///// -->
     <div id = "flex-parent">
+    <!-- //////creating nav section//////// -->
       <div id= "top">
         <div id ="nav-header">
           <nav>
@@ -31,18 +33,21 @@
           <h3><img src="https://imgur.com/6IvjToC.jpg?!" alt="photo of John"/></h3>
         </div>
       </div> -->
+      <!-- ////////creating section for traits ////// -->
       <div id="right">
           <div class = "about"><h3>Hobbies</h3></div>
           <div class = "about"><h3>Strengths</h3></div>
           <div class = "about"><h3>Skills</h3></div>
           <div class = "about"><h3>Overview</h3></div>
       </div>
+      <!-- ////////creating section for the social media links. Link images found on https://ionic.io/ionicons/usage////// -->
       <div id = "bottom">
         <div class="links"><a href="https://www.facebook.com/john.komninos.33"><ion-icon class="blue-logo" name="logo-facebook"></ion-icon></a></div>
         <div class="links"><a href="https://www.linkedin.com/in/john-komninos-54923211b/"><ion-icon class="blue-logo" name="logo-linkedin"></ion-icon></a></div>
         <div class="links"><a href="https://github.com/JohnKomninos"><ion-icon id ="black-logo" name="logo-github"></ion-icon></a></div>
         <div class="links"><a href="#"><ion-icon class="blue-logo" name="logo-twitter"></a></ion-icon></div>
       </div>
+      <!-- ////////created a modal to instruct the user about clicking on one of the 4 cards////// -->
       <div id ="modal-background">
         <div id = "modal-box">
           <h3 id = "modal-text">Click on any of the 4 boxes to learn more!</h3>
@@ -52,6 +57,7 @@
         </div>
       </div>
     </div>
+    <!-- //////The below script was needed to make the icons appear///// -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>

@@ -1,12 +1,15 @@
+//defining card text/////
 const name = "John Komninos"
 const text = "For 8 years I specialized in logistics but recently I have realized that, although I am good at logistics, my interest is no longer there. Having taken some computer classes in college, I have decided to revisit and pursue a career in tech. I believe the skills I have acquired through managing logistics for 8 years coupled with my passion for tech will make me an excellent software developer."
 
 $(()=>{
+  ////querying for each card////
   const $hobby = $('.about').children().eq(0)
   const $strengths = $('.about').children().eq(1)
   const $traits = $('.about').children().eq(2)
   const $overview = $('.about').children().eq(3)
 
+////defining card text////
   const $list1 = $('<ul>').attr('id' , 'hobbies')
   const $hobbies1 = $('<li>').text('Handball').appendTo($list1)
   const $hobbies2 = $('<li>').text('Coding').appendTo($list1)
@@ -35,7 +38,7 @@ $(()=>{
   const $name = $('<h1>').text(name).appendTo($newDiv)
   const $text = $('<h3>').text(text).appendTo($newDiv)
   $newDiv.hide()
-
+//////adding the click handlers///////
   $hobby.on("click" , ()=>{
     $hobby.hide('slow')
     $list1.show('slow')
@@ -75,7 +78,7 @@ $(()=>{
     $newDiv.hide()
     $('.about').show()
   })
-
+/////setting the timer for the modal and click handler for the modal close button
   const $modal = $('#modal-background')
   const openModal = () =>{
     $modal.css('display' , 'block')

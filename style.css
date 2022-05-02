@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
-
 body{
   font-family: 'Rubik', sans-serif;
   color: white;
@@ -9,6 +8,7 @@ body{
   background-image: linear-gradient(315deg, #5b6467 0%, #8b939a 74%); */
 }
 
+/* ////styling the main flex box////// */
 #flex-parent{
   width:100%;
   display: flex;
@@ -17,7 +17,7 @@ body{
   align-content:space-between;
   justify-content: space-evenly;
 }
-
+/* /////styling the nav///// */
 #top{
   display: flex;
   flex-wrap: wrap;
@@ -45,7 +45,7 @@ body{
   background-color: rgba(0, 255, 0, .8);
   border-radius: 10px;
 }
-
+/* ///////styling the greeting and links///// */
 #left{
   display: flex;
   flex-wrap:wrap;
@@ -83,7 +83,7 @@ ion-icon{
 #black-logo{
   color:black;
 }
-
+/* //////styling the right and photo////// */
 #right{
   display: flex;
   flex-wrap: wrap;
@@ -96,6 +96,7 @@ ion-icon{
 
 }
 
+/* /////styling the cat carousel//////// */
 #bottom{
   display: flex;
   flex-direction: row;
@@ -124,6 +125,7 @@ ion-icon{
   background-color: black;
 }
 
+/* ////adjusting for mobile screen//// */
 @media (max-width:464px){
 
   #top{

@@ -1,3 +1,4 @@
+///building the car carousel//////
 $(()=>{
 let currentImgIndex = 0
 const $numOfImages = $('.images').children().length-1

@@ -6,6 +6,7 @@ body{
   background-color: #000000;
   background-image: linear-gradient(315deg, #000000 0%, #7f8c8d 74%);
 }
+/* ////styling the parent flex box///// */
 #flex-parent{
   display: flex;
   flex-wrap: wrap;
@@ -13,6 +14,7 @@ body{
   align-content:space-between;
 }
 
+/* /////styling the nav//// */
 #top{
   display: flex;
   flex-wrap: wrap;
@@ -41,7 +43,7 @@ body{
   background-color: rgba(0, 255, 0, .8);
 }
 
-
+/* ////styling the game text and buttons//// */
 #middle{
   display: flex;
   flex-direction: column;
@@ -74,6 +76,7 @@ body{
   border-radius: 7px;
 }
 
+/* ///styling the links///// */
 #bottom{
   display:flex;
   flex-wrap: wrap;
@@ -100,6 +103,7 @@ ion-icon{
   color:white;
 }
 
+/* /////adjusting for mobile//// */
 @media (max-width:400px){
 #nav-header{
   width:100%;

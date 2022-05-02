@@ -10,6 +10,7 @@ body{
   /* background-color: #5b6467;
   background-image: linear-gradient(315deg, #5b6467 0%, #8b939a 74%); */
 }
+/* /////styling the parent flex box//// */
 #flex-parent{
   display: flex;
   flex-wrap: wrap;
@@ -17,6 +18,7 @@ body{
   align-content:space-between;
 }
 
+/* //////styling the nav////// */
 #top{
   display: flex;
   flex-wrap: wrap;
@@ -53,7 +55,7 @@ body{
   text-align: center;
   text-decoration: underline;
 }
-
+/* ///////removed a photo I previously had added//// */
 /* #left{
   display: flex;
   flex-wrap: wrap;
@@ -66,6 +68,7 @@ body{
   background-size: cover;
 } */
 
+/* /////styling the card/////// */
 #right{
   display: flex;
   flex-wrap: wrap;
@@ -107,6 +110,7 @@ body{
   box-shadow: -10px 10px 5px -1px grey;
 }
 
+/* /////styling the links////// */
 #bottom{
   display:flex;
   flex-wrap: wrap;
@@ -133,6 +137,7 @@ ion-icon{
   color:white;
 }
 
+/* ////styling the modal//// */
 #modal-background{
   position:fixed;
   top:0;
@@ -163,7 +168,7 @@ ion-icon{
   padding-right: 20px;
   padding-top:10px;
 }
-
+/* ////adjusting for mobile screens//// */
 @media (max-width:594px){
   #top{
     justify-content: center;

@@ -9,7 +9,9 @@
       <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <!-- ///////creating the parent flex box///// -->
     <div id = "flex-parent">
+      <!-- //////creating the nav section////// -->
       <div id="top">
         <div id ="nav-header">
           <nav>
@@ -23,6 +25,7 @@
           </nav>
         </div>
       </div>
+      <!-- ///////creating the greeting and social media links. links found at https://ionic.io/ionicons/usage////// -->
       <div id= "left">
         <div id="greeting">
           <h3>Hello!</h3>
@@ -35,11 +38,13 @@
           <div class="links"><a href="#"><ion-icon class="blue-logo" name="logo-twitter"></a></ion-icon></div>
         </div>
       </div>
+      <!-- //////adding a photo of myself as a background///// -->
       <div id = "right">
         <div id = "photo">
           <!-- <img src="https://imgur.com/UcE0fiP.jpg" alt="photo of John"/> -->
         </div>
       </div>
+      <!-- //////creating a cat carousel/////// -->
       <div id="bottom">
         <div class="carousel-button" id="prev">
           <h3>Prev</h3>
@@ -56,6 +61,7 @@
         </div>
       </div>
     </div>
+    <!-- //////The below scripts were needed to make the icons appear///// -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
