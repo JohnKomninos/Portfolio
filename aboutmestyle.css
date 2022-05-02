@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Akshar&family=Roboto:wght@300&display=swap');
+
 body{
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
@@ -8,7 +9,7 @@ body{
 #flex-parent{
   display: flex;
   flex-wrap: wrap;
-  height:1100px;
+  height:900px;
   align-content:space-between;
 }
 
@@ -40,8 +41,8 @@ body{
 
 .nav:hover{
   background-color: rgba(0, 255, 0, .8);
+  border-radius: 10px;
 }
-
 
 #title{
   width:100%;
@@ -55,7 +56,6 @@ body{
   width:20%;
   margin-left: 5%;
   height:500px;
-
 }
 
 #right{
@@ -78,7 +78,7 @@ body{
 }
 
 .about h3{
-  padding-top: 70px
+  padding-top: 70px;
 }
 
 #hobbies{
@@ -100,7 +100,6 @@ body{
   flex-wrap: wrap;
   justify-content: space-evenly;
   width: 100%;
-
 }
 
 .links{
@@ -145,6 +144,7 @@ ion-icon{
   text-align: center;
   padding-top: 80px
 }
+
 #footer{
   text-align:right;
   padding-right: 20px;
@@ -152,58 +152,62 @@ ion-icon{
 }
 
 @media (max-width:594px){
-#nav-header{
-  width:100%;
-  height:350px;
-}
+  #top{
+    justify-content: center;
+  }
 
-#nav-header li{
-  display:block;
-  height:50px;
-  text-align: center;
-  font-size: 2em
-}
+  #nav-header{
+    width:80%;
+    height:350px;
+  }
 
-#left{
-  height:400px;
-}
-#right{
-  margin-left: 0%;
-  width: 100%;
-  height:500px
-}
+  #nav-header li{
+    display:block;
+    height:50px;
+    text-align: center;
+    font-size: 1.5em
+  }
 
-.about{
-  height:200px;
-}
-#overview{
-  width:85%;
-  height:400px;
-}
+  #left{
+    height:400px;
+  }
+  #right{
+    margin-left: 0%;
+    width: 100%;
+    height:500px
+  }
 
-#flex-parent{
-  height:1400px;
-}
+  .about{
+    height:200px;
+  }
+  #overview{
+    width:85%;
+    height:400px;
+  }
+
+  #flex-parent{
+    height:1400px;
+  }
 }
 
 @media (max-width:893px){
-#left{
-  width:100%;
-  margin-left: 0%;
-  height:400px;
-}
+  #left{
+    width:100%;
+    margin-left: 0%;
+    height:400px;
+  }
 
-#photo{
-  margin:0 auto;
-}
+  #photo{
+    margin:0 auto;
+  }
 
-#right{
-  margin-left: 0%;
-  width: 100%;
-  height:500px
-}
+  #right{
+    margin-left: 0%;
+    width: 100%;
+    height:500px
+  }
 
-.about{
-  height:200px;
-}
+  .about{
+    height:200px;
+  }
 }

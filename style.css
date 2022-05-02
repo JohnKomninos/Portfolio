@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Akshar&family=Roboto:wght@300&display=swap');
+
 body{
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
@@ -13,7 +14,6 @@ body{
   height:900px;
   align-content:space-between;
   justify-content: space-evenly;
-  /* overflow: scroll; */
 }
 
 #top{
@@ -28,7 +28,6 @@ body{
   display: inline;
   font-size: 1em;
   padding:8px;
-
 }
 
 #nav-header{
@@ -45,6 +44,7 @@ body{
 
 .nav:hover{
   background-color: rgba(0, 255, 0, .8);
+  border-radius: 10px;
 }
 
 #left{
@@ -69,13 +69,10 @@ body{
   display: flex;
   width:100%;
   justify-content: space-between;
-  font-size: 1em;
 }
 
 .links{
-width:55px;
-text-align: center;
-border-radius: 50%;
+  width:55px;
 }
 
 ion-icon{
@@ -120,43 +117,44 @@ ion-icon{
   width: 50px;
   border:1px solid black;
   border-radius: 50%;
-}
-
-.carousel-button{
   text-align: center;
   padding-bottom: 5px;
   background-color: red;
 }
 
 @media (max-width:464px){
-#nav-header{
-  width:100%;
-  height:350px;
-}
 
-#nav-header li{
-  display:block;
-  height:50px;
-  text-align: center;
-  font-size: 2em
-}
+  #top{
+    justify-content: center;
+  }
 
-#left{
-  width:100%;
-  height:500px;
-}
+  #nav-header{
+    width:80%;
+    height:350px;
+  }
 
-#right{
-  width:100%;
-}
+  #nav-header li{
+    display:block;
+    height:50px;
+    text-align: center;
+    font-size: 1.5em
+  }
 
-#photo{
-  margin:0 auto;
-  margin-bottom: 20px;
-}
+  #left{
+    width:100%;
+    height:500px;
+  }
 
-#flex-parent{
-height:1400px
-}
+  #right{
+    width:100%;
+  }
 
+  #photo{
+    margin:0 auto;
+    margin-bottom: 20px;
+  }
+
+  #flex-parent{
+  height:1400px
+  }
 }
