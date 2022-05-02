@@ -1,11 +1,11 @@
 const classes =[
-{name:'Swordsman', health:14, attack:10, defense:5, speed:6, acc:.5},
-{name:'Archer', health:12, attack:6, defense:3, speed:10, acc:.8},
-{name:'Paladin', health:17, attack:4, defense:8, speed:4, acc:.7},
-{name:'Lancer', health:13, attack:7, defense:4, speed:8, acc:.6}]
+{name:'Swordsman', mHealth:14, health:14, attack:10, defense:5, speed:6, acc:.5},
+{name:'Archer', mHealth:12, health:12, attack:6, defense:3, speed:10, acc:.8},
+{name:'Paladin', mHealth:17, health:17, attack:4, defense:8, speed:4, acc:.7},
+{name:'Lancer', mHealth:13, health:13, attack:7, defense:4, speed:8, acc:.6}]
 
 const enemies =[
-{name:'Enemy1', health:10, attack:10, defense:2, speed:5, acc:.7},
+{name:'Enemy1', health:100, attack:10, defense:2, speed:5, acc:.7},
 {name:'Enemy2', health:10, attack:5, defense:2, speed:5, acc:.7},
 {name:'Enemy3', health:10, attack:5, defense:2, speed:5, acc:.7},
 {name:'Enemy4', health:10, attack:5, defense:2, speed:5, acc:.7},
@@ -13,6 +13,7 @@ const enemies =[
 
 let playerChoice = 0
 
+let potion = 2
 // let $gameText = $('.game-text')
 // let $gameChoice = $('.game-choice')
 
@@ -30,7 +31,6 @@ const ourAttack = (enemies) =>{
 
     }
 }
-
 const enemyAttack = (enemies) =>{
   if(enemies.health>0){
       if(enemies.acc>Math.random()){
@@ -68,14 +68,43 @@ const instance1 = () => {
             ourAttack(enemies[0])
         }
     })
+    $('.game-buttons').eq(1).on('click' , ()=>{
+      $gameText.empty()
+      if(potion>0){
+          playerChoice.health += 10
+          console.log(playerChoice.health)
+          if(playerChoice.health>playerChoice.mHealth){
+              playerChoice.health = playerChoice.mHealth
+              $('<h3>').text('You recovered to full health').appendTo($gameText)
+          }else{
+              $('<h3>').text('You recovered 10 health').appendTo($gameText)
+          }
+          potion --
+          enemyAttack(enemies[0])
+      }else{
+          $('<h3>').text('You have no potions to use').appendTo($gameText)
+      }
+    })
     $('.game-buttons').eq(2).on('click' , ()=>{
       $gameText.empty()
       $('<h3>').text(playerChoice.name).appendTo($gameText)
+      $('<h3>').text(`Max Health: ${playerChoice.mHealth}`).appendTo($gameText)
       $('<h3>').text(`Health: ${playerChoice.health}`).appendTo($gameText)
       $('<h3>').text(`Attack: ${playerChoice.attack}`).appendTo($gameText)
       $('<h3>').text(`Defense: ${playerChoice.defense}`).appendTo($gameText)
       $('<h3>').text(`Speed: ${playerChoice.speed}`).appendTo($gameText)
       $('<h3>').text(`Accuracy: ${playerChoice.acc}`).appendTo($gameText)
+    })
+    $('.game-buttons').eq(3).on('click' , ()=>{
+      $gameText.empty()
+      if(Math.random()>.5){
+          $('<h3>').text('You managed to get away').appendTo($gameText)
+          $gameChoice.empty()
+          $('<button>').text('proceed').appendTo($gameChoice)
+      }else {
+          $('<h3>').text('You failed to get away').appendTo($gameText)
+          enemyAttack(enemies[0])
+      }
     })
 }
 
